@@ -124,7 +124,7 @@ footer a {
 /* Start of hero section with background */
 .hero { /* Here section is a flex container */
   height: 300px;
-  background-image: url(".Assets/Images/Dubai-skyline.JPG");
+  background-image: url(".Assets/Images/stock-image-1");
   border-bottom-left-radius: 30px 30px; /* border-radious bottom sides with bottom border changed also*/
   border-bottom-right-radius: 30px 30px;
   background-size: cover; /* Image will cover the background */
