@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./Assets/style.css">
+    <title>Swapna Menon</title>
+</head>
+
+<body>
+    <header>
+        <!--class for title background-->
+        <span class="span-background title"> 
+            <h1>Swapna Menon's Portfolio</h1>
+        </span>
+        <nav>
+            <!--header nav bar-->
+            <ul class="nav-effects"> 
+                <li>
+                    <!-- Anchor elements -->
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#Projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact-me">Contact Me</a>
+                </li>
+                <li> 
+                    <!--This anchor href element
+                     action results in being able to download and view my pdf resume-->
+                    <a href="">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Here Section -->
+    <!-- Hero section will have the image as background -->
+    <section class="hero">
+        <!-- Flex Container-->
+        <div class="hero-subtitle">           
+                <!-- Span used to provide a span background as well as change the opacity of both the span and the text -->
+                <span class="span-background opacity">Hope you get an Insight into what I have been able to create while learning how to code!</span>
+        </div>
+    </section>
+
+    <!-- About Me article grid-->
+    <article>
+        <!--Id's coming from the header nav and flex wrapper--> 
+        <div id="about-me" class="about-me-wrapper">
+            <div class="about-me-grid-container"> <!-- About me containter is a grid container -->
+                <div class="about-me-item about-me-title"> <!-- Each item is a grid item -->
+                    <p> About me </p>
+                </div>
+                <div class="about-me-item p1">
+                    <p></p>
+                </div>
+                <div class="about-me-item p2">
+                    <p></p>
+                </div>  
+            </div>
+        </div> 
+    </article>
+
+    <!-- Work Projects article grid-->
+    <article>
+        <div id="work" class="work-wrapper"> <!-- Id's coming from the header nav and a flex wrapper -->
+            <div class="work-grid-container"> <!-- Work projects container is a grid container -->
+                <div class="work-item work-title"> <!-- Each item is a grid item -->
+                    <p>Completed Projects</p>
+                </div>
+                <!-- Clickable grid link functionality achieved with a javascript function as anchor wrap did not work (tried) as intended for me -->
+                <!-- Alt, title (tooltip) and open in new tab functionality added-->
+                <!-- Each grid item has its own grid location achieved by creating one object/instance per class -->
+                <div onclick="projectClicked('challenge-1-refactor')" alt="Image Displays Horiseon Service's landing Page" title="Horiseon landing Page" target="_blank" style="cursor: pointer;" class="work-item-project challenge-1-refactor">
+                    <span class="span-background"> <!-- Span added to contain h3, lower text and wrapped background -->
+                        <h3>Horiseon Services</h3>
+                        <span class="lower-text">HTML/CSS</span> <!-- A small class to apply for all grid lower text -->
+                    </span>
+                </div>
+                <!-- All grids below follow same patern as described above until this article container is finished -->
+                <div onclick="projectClicked('run-buddy')" alt="Image Displaying the RUN BUDDY landing Page" title="RUN BUDDY landing page" style="cursor: pointer;" class="work-item-project run-buddy">
+                    <span class="span-background">
+                        <h3>Run Buddy</h3>
+                        <span class="lower-text">HTML/CSS</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Footer content Grid-->
+    <footer>
+        <div id="contact-me" class="footer-wrapper"> <!-- Id's coming from the header nav and a flex wrapper -->
+            <div class="footer-container"> <!-- footer container is a grid container -->
+                <!-- Each grid item has its own grid location achieved by creating one object/instance per class -->
+                <div class="footer-grid-item contact-me"> <!-- Each item is a grid item --> 
+                    Contact Me
+                </div>
+                <div class="footer-grid-item phone">
+                    <a href="tel:(647) 868-9658" class="nav-effects">(647) 868-9658</a>
+                </div>
+                <div class="footer-grid-item email"> 
+                    <a href="swapnamenon8@gmail.com">swapnamenon8@gmail.com</a>
+                </div>
+                <div class="footer-grid-item git-hub"> 
+                    <a href="" target="_blank">Link to my GitHub Repository for your Reference!</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- javascript function direct user to the appropiate landing page based on work project grid cell clicked -->
+    <script> 
+        function projectClicked(input) { /* Function receives 1 string argument for conditional check */
+            var input = input; /* Assigned in put to a variable for conditional check */
+    
+            if (input == "challenge-1-refactor") { /* If else statement to determine url to go */
+                /* Javascript window.class to open page */
+                window.open("https://esroleo.github.io/html-css-git-challenge1-code-refactor/");
+                window.open("https://esroleo.github.io/web-api-challenge-code-quiz/");
+            }  else if (input == 'work-day-scheduler') {
+                window.open("https://esroleo.github.io/work-day-scheduler/");
+                return true; /* Return true - No used as of now but semanticly correct */
+            }
+        };
+            
+    </script>
+</body>
+</html>
