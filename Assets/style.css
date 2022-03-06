@@ -159,7 +159,6 @@ footer a {
 .About-me-item.About-me-title { /* Cell declarations for the title of the container */
   padding-top: 0px;
   font-size: 35px;
-  grid-row: 1 / span 4;
   padding-right: 10px;
   text-align: right;
   border-right: 2px solid var(--about-me-work-border);
@@ -167,14 +166,10 @@ footer a {
 
 .About-me-item.p1 {
   padding-left: 10px;
-  grid-column: 2 / span 3;
-  grid-row: 1 / span 2;
 }
 
 .About-me-item.p2 {
   padding-left: 10px;
-  grid-column: 2 / span 3;
-  grid-row: 3 / span 2;
 }
 /* End of FLEX CSS Main body code About me*/
 
@@ -200,15 +195,16 @@ footer a {
 .Projects-item.work-title {
   padding-top: 10px;
   font-size: 35px;
-  grid-row: 1 / span 9;
+  height: 15rem;
   text-align: right;
   padding-right: 10px;
   border-right: 2px solid var(--about-me-work-border);
 }
-
-.Projects-item-project .challenge-1-refactor { /* Grid cells with embedded images */
-  grid-column: 2 / span 2;
-  grid-row: 1 / span 6;
+.Horiseonimage{
+  max-height: 150px;
+  
+}
+ .challenge-1-refactor { /* Grid cells with embedded images */
   background-image: url(./Images/Horiseon-image-3.jpg);
   background-size: cover; /* Allows the image to autosie to cover the container */
   display: flex; /*Flex required to move the element as flex */
@@ -219,10 +215,8 @@ footer a {
   border: .25vw solid var(--rgba-border-color-opacity);
 }
 
-.Projects-item-project.run-buddy {
-  grid-column: 3 /span 1;
-  grid-row: 7 / span 3;
-  background-image: url(".Assets/Images/Run-Buddy-image-2.JPG");
+.run-buddy {
+  background-image: url("./Images/Run-Buddy-image-2.JPG");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/

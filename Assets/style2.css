@@ -1,0 +1,58 @@
+header {
+    display:flex;
+    justify-content: space-between;
+    background-color: azure;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+.nav-effects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.nav-effects li {
+    margin: 0.5rem;
+    text-decoration: none;
+}
+
+.nav-effects li a {
+    text-decoration: none;
+    color: black;   
+}
+
+.hero {
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.075)),url(./Images/stock-image-1.jpg);
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color:azure;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+   font-family: 'Times New Roman', Times, serif;
+   padding-bottom: 15px;
+   padding-right: 15px;
+}
+
+article {
+    display: flex;
+    margin: 1rem 0.5rem;
+}
+
+.About-me-wrapper  {
+    border-right:2px solid black;
+}
+
+.About-me-item p {
+    margin-right: 10px;
+}
+
+
+
+
+
