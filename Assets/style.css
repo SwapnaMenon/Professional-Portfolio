@@ -15,12 +15,6 @@
 }
 
 /* Start of Semantic code */
-
-/* Smoth Scrolling effect */
-html {
-  scroll-behavior: smooth;
-}
-
 /* Start of Header code */
 header {
   display: flex; /* Flex container to display the child elements as flex with space between and wrap */
@@ -124,7 +118,7 @@ footer a {
 /* Start of hero section with background */
 .hero { /* Here section is a flex container */
   height: 300px;
-  background-image: url(".Assets/Images/stock-image-1");
+  background-image: url(".Professional-Portfolio/Assets/Images/stock-image-1.JPG");
   border-bottom-left-radius: 30px 30px; /* border-radious bottom sides with bottom border changed also*/
   border-bottom-right-radius: 30px 30px;
   background-size: cover; /* Image will cover the background */
@@ -154,7 +148,7 @@ footer a {
   margin-top: 50px;
 }
 
-.about-me-grid-container {/* CSS Grid */
+.About-me-grid-container {/* CSS Grid */
   width: 80%; /* Contain the grid to a maximum of 80% of the flex wrapper */
   display: grid;
   grid-template-columns: 1fr repeat(3, 2fr);  /* Create a 4X4 grid with the first column smaller than the others 3 */
@@ -162,7 +156,7 @@ footer a {
   gap: 10px 10px; /* Gap on x and y grid */
 }
 
-.about-me-item.about-me-title { /* Cell declarations for the title of the container */
+.About-me-item.About-me-title { /* Cell declarations for the title of the container */
   padding-top: 0px;
   font-size: 35px;
   grid-row: 1 / span 4;
@@ -171,13 +165,13 @@ footer a {
   border-right: 2px solid var(--about-me-work-border);
 }
 
-.about-me-item.p1 {
+.About-me-item.p1 {
   padding-left: 10px;
   grid-column: 2 / span 3;
   grid-row: 1 / span 2;
 }
 
-.about-me-item.p2 {
+.About-me-item.p2 {
   padding-left: 10px;
   grid-column: 2 / span 3;
   grid-row: 3 / span 2;
@@ -186,7 +180,7 @@ footer a {
 
 
 /* Start of FLEX CSS Main body code Work projects*/
-.work-wrapper { /* Flex wrapper */
+.Projects-wrapper { /* Flex wrapper */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -194,7 +188,7 @@ footer a {
   margin-top: 50px;
 
 }
-.work-grid-container {/* CSS Grid */
+.Projects-grid-container {/* CSS Grid */
   width: 80%;
   display: grid;
   /* Create a 4X8 grid. */
@@ -203,7 +197,7 @@ footer a {
   gap: 10px 10px; /* Gap on x and y grid */
 }
 
-.work-item.work-title {
+.Projects-item.work-title {
   padding-top: 10px;
   font-size: 35px;
   grid-row: 1 / span 9;
@@ -212,10 +206,10 @@ footer a {
   border-right: 2px solid var(--about-me-work-border);
 }
 
-.work-item-project.challenge-1-refactor { /* Grid cells with embedded images */
+.Projects-item-project.challenge-1-refactor { /* Grid cells with embedded images */
   grid-column: 2 / span 2;
   grid-row: 1 / span 6;
-  background-image: url("../images/challeng-1-refactor-code-smaller.JPG");
+  background-image: url(".Professional-Portfolio/Assets/Images/Horiseon-image-3.JPG");
   background-size: cover; /* Allows the image to autosie to cover the container */
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
@@ -225,10 +219,10 @@ footer a {
   border: .25vw solid var(--rgba-border-color-opacity);
 }
 
-.work-item-project.run-buddy {
+.Projects-item-project.run-buddy {
   grid-column: 3 /span 1;
   grid-row: 7 / span 3;
-  background-image: url("../images/run-buddy-project.JPG");
+  background-image: url(".Assets/Images/Run-Buddy-image-2.JPG");
   background-size: cover;
   display: flex; /*Flex required to move the element as flex */
   align-items: flex-end; /*Allow text to be at center of grid*/
