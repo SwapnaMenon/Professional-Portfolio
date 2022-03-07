@@ -7,7 +7,7 @@ header {
 }
 
 body {
-    background-color: var(--lightgray); 
+    background-color: lightgrey; 
     font-family: 'Martel', serif;
 }
 
@@ -52,11 +52,9 @@ article {
     margin: 1rem 0.5rem;
 }
 
-.about-me-grid-container {/*CSS Grid*/
-    /* Create a 3X6 grid for smaler screen */
+.about-me-grid-container {   
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: repeat(5, 1fr);
-    /* Gap on x and y grid */
     gap: 5px 5px; 
 }
 
@@ -116,7 +114,7 @@ article {
     border-right: 2px solid;
 }
 
-.footer-wrapper { /* Flex container */
+.footer-wrapper { 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -124,25 +122,24 @@ article {
 }
 
 .footer-container {
-    /* Apply background to all of the body of the page */
     background-color: var(--header-footer-background-color); 
-    color: var(--lightskyblue); /* Title color */
+    color: var(--lightskyblue); 
 }
   
 .footer-grid-item {
     text-decoration: none;
-    border-bottom: 2px solid var(--lightskyblue); /* Border bottom */
-    color: var(--lightskyblue); /* anchor text color */
-    font-size: 1.8vw; /* View port font-size to help with responsiveness */
+    border-bottom: 2px solid lightskyblue; 
+    color: lightskyblue; 
+    font-size: 25px;
     font-weight: solid;
 }
 
-.footer-container { /* CSS Grid */
+.footer-container { 
     width: 80%;
     display: grid;
-    /*create a 4X3 grid. */
-    grid-template-columns: 1fr repeat(3, 2fr); /* Create a 4X4 grid with the first column smaller than the others 3 */
-    grid-template-rows: repeat(3,2fr); /* 3 rows of slighty biger size as a test */
+   
+    grid-template-columns: 1fr repeat(3, 2fr); 
+    grid-template-rows: repeat(3,2fr); 
     gap: 20px 20px; 
   }
 
