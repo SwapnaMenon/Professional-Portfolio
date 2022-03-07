@@ -1,9 +1,14 @@
 header {
     display:flex;
     justify-content: space-between;
-    background-color: azure;
-    margin: 1rem;
-    padding: 0.5rem;
+    background-color: rgb(57, 112, 160);
+    margin: 1.5rem;
+    padding: 0.7rem;
+}
+
+body {
+    background-color: var(--lightgray); 
+    font-family: 'Martel', serif;
 }
 
 .nav-effects {
@@ -15,11 +20,13 @@ header {
 .nav-effects li {
     margin: 0.5rem;
     text-decoration: none;
+    font-size: 40px;
 }
 
 .nav-effects li a {
     text-decoration: none;
-    color: black;   
+    color: black; 
+    font-size: 25px;
 }
 
 .hero {
@@ -34,9 +41,10 @@ header {
 }
 
 .hero-subtitle {
-   font-family: 'Times New Roman', Times, serif;
-   padding-bottom: 15px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   padding-bottom: 15px; 
    padding-right: 15px;
+   font-size: 2.8vw;
 }
 
 article {
@@ -44,13 +52,122 @@ article {
     margin: 1rem 0.5rem;
 }
 
+.about-me-grid-container {/*CSS Grid*/
+    /* Create a 3X6 grid for smaler screen */
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(5, 1fr);
+    /* Gap on x and y grid */
+    gap: 5px 5px; 
+}
+
 .About-me-wrapper  {
     border-right:2px solid black;
 }
 
+.about-me-item.about-me-title {
+    padding-top: 0px;
+    font-size: 25px;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 1;
+    text-align: center;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    border-right: none;
+    border-bottom: 2px solid;
+}
+
 .About-me-item p {
     margin-right: 10px;
+    padding-top: 10px;
+    font-size: 35px;
+    height: 0rem;
+    text-align: right;
+    padding-right: 10px;
 }
+
+.about-me-item.p1 {
+    padding-top: 5px;
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 2;
+}
+
+.about-me-item.p2 {
+    padding-top: 5px;
+    grid-column: 1 / span 3;
+    grid-row: 4 / span 2;
+    padding-bottom: 10px;
+}
+
+.Projects-wrapper { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.Projects-item {
+    margin-right: 10px;
+    padding-top: 10px;
+    font-size: 35px;
+    height: 15rem;
+    text-align: right;
+    padding-right: 10px;
+    border-right: 2px solid;
+}
+
+.footer-wrapper { /* Flex container */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.footer-container {
+    /* Apply background to all of the body of the page */
+    background-color: var(--header-footer-background-color); 
+    color: var(--lightskyblue); /* Title color */
+}
+  
+.footer-grid-item {
+    text-decoration: none;
+    border-bottom: 2px solid var(--lightskyblue); /* Border bottom */
+    color: var(--lightskyblue); /* anchor text color */
+    font-size: 1.8vw; /* View port font-size to help with responsiveness */
+    font-weight: solid;
+}
+
+.footer-container { /* CSS Grid */
+    width: 80%;
+    display: grid;
+    /*create a 4X3 grid. */
+    grid-template-columns: 1fr repeat(3, 2fr); /* Create a 4X4 grid with the first column smaller than the others 3 */
+    grid-template-rows: repeat(3,2fr); /* 3 rows of slighty biger size as a test */
+    gap: 20px 20px; 
+  }
+
+.footer-grid-item.contact-me {
+    padding-top: 10px;
+    font-size: 35px;
+    grid-row: 1 / span 3;
+    text-align: right;
+    padding-right: 10px;
+    border-right: 2px solid;
+}
+
+.Projects-grid-container {/* CSS Grid */
+    /* Create a 3X9 grid for smaler screen */
+    /* Will assign size directly to avoid grid span */
+    grid-template-columns: repeat(3, 1fr);
+    /* .5fr is to fix spacing on main title item */
+    grid-template-rows: .5fr repeat(10, 1fr);
+    /* Gap on x and y grid */
+    gap: 2.5px 2.5px;
+  }
+
+
+
+
 
 
 
