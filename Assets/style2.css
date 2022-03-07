@@ -155,17 +155,81 @@ article {
     border-right: 2px solid;
 }
 
-.Projects-grid-container {/* CSS Grid */
-    /* Create a 3X9 grid for smaler screen */
-    /* Will assign size directly to avoid grid span */
+.Projects-grid-container {
     grid-template-columns: repeat(3, 1fr);
-    /* .5fr is to fix spacing on main title item */
     grid-template-rows: .5fr repeat(10, 1fr);
-    /* Gap on x and y grid */
     gap: 2.5px 2.5px;
   }
 
 
+.Horiseonimage{
+    max-height: 150px;
+}
+
+.Code-refactor { 
+    background-image: url(./Images/Horiseon-image-3.jpg);
+    background-size: contain; 
+    display: flex; 
+    align-items: flex-end; 
+    padding-left: 0px;
+    padding-bottom: 15px;
+    text-align: left;
+    border: .25vw solid;
+}
+
+
+.run-buddy {
+  background-image: url(./Images/Run-Buddy-image-2.jpg);
+  background-size: contain;
+  display: flex; 
+  align-items: flex-end; 
+  padding-left: 0px;
+  padding-bottom: 15px;
+  text-align: left;
+  border: .25vw solid ;
+}
+
+.span-background {
+    background-color: lightskyblue;
+    position: relative;
+    line-height: 1.5;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 5%;
+    opacity: .8;
+}
+
+.span-background.title {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.span-background.opacity {
+    opacity: .95;
+    font-size: 20px;
+}
+
+.Projects-grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: .5fr repeat(10, 1fr);
+    gap: 2.5px 2.5px;
+}
+
+.Projects-item-project .Code-refactor {
+    grid-column: 1 / span 3;
+    grid-row: 2 / span 3;
+    align-items: flex-end;
+    text-align: center;
+    background-position: scroll; 
+}
+
+.Projects-item-project .run-buddy {
+    grid-column: 1 /span 3;
+    grid-row: 5 / span 2;
+    align-items: flex-end;
+    text-align: center;
+    background-position: scroll;
+}
 
 
 
