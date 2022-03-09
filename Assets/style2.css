@@ -20,7 +20,7 @@ body {
 .nav-effects li {
     margin: 0.5rem;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .nav-effects li a {
@@ -44,7 +44,7 @@ body {
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    padding-bottom: 15px; 
    padding-right: 15px;
-   font-size: 2.8vw;
+   font-size: 20px;
 }
 
 article {
@@ -55,10 +55,12 @@ article {
 .About-me-title {
     margin-right: 1rem;
     border-right: 1px solid black;
+    font-size: 30px;
 }
 .About-me-grid-container {
     display: flex;
-    justify-content: start;
+    justify-content: right;
+    font-size: 20px;
 }
 
 .Projects-wrapper {
@@ -70,6 +72,7 @@ article {
 .Projects-grid-container {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .Projects-item {
@@ -85,13 +88,10 @@ article {
     width: 20rem;
 }
 
-
-
-
 .Projects-item {
     margin-right: 10px;
     padding-top: 10px;
-    font-size: 35px;
+    font-size: 30px;
     height: 15rem;
     text-align: right;
     padding-right: 10px;
@@ -101,7 +101,7 @@ article {
 .footer-wrapper { 
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     margin-top: 50px;
 }
 
@@ -121,7 +121,6 @@ article {
 .footer-container { 
     width: 80%;
     display: grid;
-   
     grid-template-columns: 1fr repeat(3, 2fr); 
     grid-template-rows: repeat(3,2fr); 
     gap: 20px 20px; 
@@ -129,7 +128,7 @@ article {
 
 .footer-grid-item.contact-me {
     padding-top: 10px;
-    font-size: 35px;
+    font-size: 30px;
     grid-row: 1 / span 3;
     text-align: right;
     padding-right: 10px;
@@ -143,7 +142,7 @@ article {
   }
 
 
-.Horiseonimage{
+.Horiseonimage {
     max-height: 150px;
 }
 
@@ -190,11 +189,7 @@ article {
     font-size: 20px;
 }
 
-.Projects-grid-container {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: .5fr repeat(10, 1fr);
-    gap: 2.5px 2.5px;
-}
+
 
 .Projects-item-project .Code-refactor {
     grid-column: 2 / span 3;
