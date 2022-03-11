@@ -112,7 +112,6 @@ article {
   
 .footer-grid-item {
     text-decoration: none;
-    border-bottom: 2px solid lightskyblue; 
     color: black; 
     font-size: 25px;
     font-weight: solid;
@@ -121,9 +120,9 @@ article {
 .footer-container { 
     width: 80%;
     display: grid;
-    grid-template-columns: 1fr repeat(3, 2fr); 
-    grid-template-rows: repeat(3,2fr); 
-    gap: 20px 20px; 
+    grid-template-columns: auto auto auto auto; 
+    /*grid-template-rows: repeat(3,2fr);
+    gap: 20px 20px; */
   }
 
 .footer-grid-item.contact-me {
